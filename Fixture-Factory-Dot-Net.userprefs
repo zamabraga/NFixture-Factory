@@ -1,0 +1,24 @@
+﻿<Properties StartupItem="Fixture-Factory-Test/Fixture-Factory-Test.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fixture-Factory-Test/PropertyTest.cs">
+    <Files>
+      <File FileName="Fixture-Factory-Test/PropertyTest.cs" Line="4" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True">
+          <Node name="Fixture-Factory-Test" expanded="True" selected="True">
+            <Node name="FixtureFactoryTest" expanded="True">
+              <Node name="PropertyTest" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="Zama Bandeira Braga" Email="zama.braga@live.com" Copyright="" Company="" Trademark="" />
+</Properties>
