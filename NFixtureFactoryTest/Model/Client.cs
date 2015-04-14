@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FixtureFactoryTest.Model
+namespace NFixtureFactoryTest.Model
 {
 	public class Client
 	{

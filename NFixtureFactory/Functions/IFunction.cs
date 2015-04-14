@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FixtureFactory.Functions
+namespace NFixtureFactory.Functions
 {
 	public interface IFunction
 	{

@@ -1,9 +1,9 @@
 ﻿using NUnit.Framework;
 using System;
-using FixtureFactory;
-using FixtureFactory.Functions;
+using NFixtureFactory;
+using NFixtureFactory.Functions;
 
-namespace FixtureFactoryTest
+namespace NFixtureFactoryTest
 {
 	[TestFixture ()]
 	public class PropertyTest

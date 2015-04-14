@@ -1,0 +1,21 @@
+﻿<Properties StartupItem="NFixtureFactory\NFixtureFactory.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True">
+          <Node name="NFixtureFactoryTest" expanded="True">
+            <Node name="NFixtureFactoryTest" expanded="True">
+              <Node name="ObjectFactoryTest" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="Zama Bandeira Braga" Email="zama.braga@live.com" Copyright="" Company="" Trademark="" />
+</Properties>

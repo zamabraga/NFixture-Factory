@@ -1,7 +1,7 @@
 ﻿using System;
-using FixtureFactory.Functions;
+using NFixtureFactory.Functions;
 
-namespace FixtureFactory
+namespace NFixtureFactory
 {
 	public class Property 
 	{

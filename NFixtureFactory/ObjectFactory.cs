@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace FixtureFactory
+namespace NFixtureFactory
 {
 	public class ObjectFactory
 	{

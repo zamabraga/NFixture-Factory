@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using FixtureFactory.Functions;
+using NFixtureFactory.Functions;
 
-namespace FixtureFactory
+namespace NFixtureFactory
 {
 	public class Rule
 	{

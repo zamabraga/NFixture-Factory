@@ -39,17 +39,17 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Fixture-Factory\Fixture-Factory.csproj">
-      <Project>{B59B426C-22DA-456D-8C13-AD0674ECAACE}</Project>
-      <Name>Fixture-Factory</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="PropertyTest.cs" />
     <Compile Include="ObjectFactoryTest.cs" />
     <Compile Include="Model\Client.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NFixtureFactory\NFixtureFactory.csproj">
+      <Project>{B59B426C-22DA-456D-8C13-AD0674ECAACE}</Project>
+      <Name>NFixtureFactory</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

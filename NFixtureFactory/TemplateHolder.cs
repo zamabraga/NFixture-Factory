@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace FixtureFactory
+namespace NFixtureFactory
 {
 	public class TemplateHolder
 	{
