@@ -1,6 +1,7 @@
-﻿using NUnit.Framework;
-using System;
+﻿using System;
+using NUnit.Framework;
 using FixtureFactory;
+using FixtureFactoryTest.Model;
 
 namespace FixtureFactoryTest
 {
@@ -8,14 +9,24 @@ namespace FixtureFactoryTest
 	public class ObjectFactoryTest
 	{
 
-
+		private readonly String PROPERTY_LABEL = "Name";
+		private readonly String PROPERTY_VALUE = "Same Name";
+		private readonly String TEMPLATE_NAME = "Valid";
 
 
 		[Test()]
 		public void ShouldCreateNewObject()
 		{
-			ObjectFactory objectFactory = new ObjectFactory (new TemplateHolder());
-			var result = objectFactory.Gimme ("Valid");
+			ObjectFactory objectFactory = new ObjectFactory (new TemplateHolder (typeof(Client))
+				.AddTemplate (TEMPLATE_NAME, new Rule ()
+											.Add(PROPERTY_LABEL, PROPERTY_VALUE)
+								 )
+			);
+
+			var obj = objectFactory.Gimme<Client> (TEMPLATE_NAME);
+			Assert.IsNotNull(obj);
+			Assert.IsInstanceOf<Client>(obj);
+			Assert.AreEqual (PROPERTY_VALUE, ((Client)obj).Name);
 		}
 
 

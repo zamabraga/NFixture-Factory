@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 
 namespace FixtureFactory
 {
@@ -24,14 +25,14 @@ namespace FixtureFactory
 
 		private Object CreateObject(Rule rule) {
 
-			IDictionary<String, Property> constructorArguments = new Dictionary<String, Property>();
-			IList<Property> deferredProperties = new List<Property>();
-			Type clazz = _templateHolder.Clazz;
 
-			Object result = null;
+			Object obj = Activator.CreateInstance (_templateHolder.Clazz);
+			foreach (var property in rule.Properties) {
+				
+				_templateHolder.Clazz.InvokeMember (property.Name, BindingFlags.SetProperty, null, obj, new object[]{ property.GetValue()});
+			}
 
-
-			return result;
+			return obj;
 		}
 
 

@@ -20,9 +20,10 @@ namespace FixtureFactory
 
 		public Rule (){}
 
-		public void Add(String property, Object value)
+		public Rule Add(String property, Object value)
 		{
 			_properties.Add(new Property(property, value));
+			return this;
 		}
 
 		public void Add(String property, IFunction function){
