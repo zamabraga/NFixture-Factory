@@ -26,6 +26,11 @@ namespace FixtureFactory
 			_rules.Add(label, rule);
 			return this;
 		}
+
+		public Rule GetRule(String label)
+		{
+			return _rules.ContainsKey(label) ? _rules [label] : null;
+		}
 	}
 }
 

@@ -57,5 +57,11 @@ namespace FixtureFactory {
                 return ResourceManager.GetString("PROPERTY_NAME_NULL", resourceCulture);
             }
         }
+        
+        internal static string NO_SUCH_LABEL_MESSAGE {
+            get {
+                return ResourceManager.GetString("NO_SUCH_LABEL_MESSAGE", resourceCulture);
+            }
+        }
     }
 }

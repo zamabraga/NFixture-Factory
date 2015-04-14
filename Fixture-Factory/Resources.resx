@@ -18,4 +18,7 @@
 	<data name="PROPERTY_FUNCTION_NULL">
 		<value>Function must not be null</value>
 	</data>
+	<data name="NO_SUCH_LABEL_MESSAGE">
+		<value>No such label: {0} {1} </value>
+	</data>
 </root>

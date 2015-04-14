@@ -25,7 +25,7 @@ namespace FixtureFactory
 			}
 
 			if (function == null) {
-				throw new ArgumentNullException (Resources.PROPERTY_NAME_NULL);
+				throw new ArgumentNullException (Resources.PROPERTY_FUNCTION_NULL);
 			}
 
 			Name = name;

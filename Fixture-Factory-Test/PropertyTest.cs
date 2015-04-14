@@ -9,25 +9,28 @@ namespace FixtureFactoryTest
 	public class PropertyTest
 	{
 
+		private readonly String PROPERTY_NAME_NULL = "Name must not be null" ;
+		private readonly String PROPERTY_FUNCTION_NULL = "Function must not be null";
+		private readonly String IDENTITY_FUNCTION_VALUE = "same value";
+
 		[Test()]
-		public void ShoudNotAllowNullName ()
+		public void ShouldNotAllowNullName ()
 		{
-			Assert.Throws<ArgumentNullException> (() => new Property(null, null), "Name must not be null" );
+			Assert.Throws<ArgumentNullException> (() => new Property(null, null), PROPERTY_NAME_NULL );
 
 		}
 
 		[Test()]
 		public void ShoudNotAllowNullFunction ()
 		{
-			Assert.Throws<ArgumentNullException> (() => new Property("Name", null), "Function must not be null" );
+			Assert.Throws<ArgumentNullException> (() => new Property("Name", null), PROPERTY_FUNCTION_NULL );
 		}
 
 		[Test()]
 		public void ShouldReturnValueFromIdentityFunction()
 		{
-			String value = "same value";
-			Property property = new Property("attr", new IdentityFunction(value));
-			Assert.AreEqual(value, property.GetValue());
+			Property property = new Property("attr", new IdentityFunction(IDENTITY_FUNCTION_VALUE));
+			Assert.AreEqual(IDENTITY_FUNCTION_VALUE, property.GetValue());
 
 		}
 

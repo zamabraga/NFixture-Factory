@@ -41,6 +41,8 @@
     <Compile Include="Functions\IdentityFunction.cs" />
     <Compile Include="Functions\IAtomicFunction.cs" />
     <Compile Include="TemplateHolder.cs" />
+    <Compile Include="Fixture.cs" />
+    <Compile Include="ObjectFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Functions\" />

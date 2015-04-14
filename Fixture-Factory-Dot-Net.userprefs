@@ -1,20 +1,14 @@
 ﻿<Properties StartupItem="Fixture-Factory-Test/Fixture-Factory-Test.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Fixture-Factory-Test/PropertyTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fixture-Factory/ObjectFactory.cs">
     <Files>
       <File FileName="Fixture-Factory-Test/PropertyTest.cs" Line="4" Column="4" />
+      <File FileName="Fixture-Factory/Property.cs" Line="70" Column="70" />
+      <File FileName="Fixture-Factory/TemplateHolder.cs" Line="29" Column="29" />
+      <File FileName="Fixture-Factory/Fixture.cs" Line="5" Column="5" />
+      <File FileName="Fixture-Factory/ObjectFactory.cs" Line="4" Column="4" />
+      <File FileName="Fixture-Factory-Test/ObjectFactoryTest.cs" Line="53" Column="53" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True">
-          <Node name="Fixture-Factory-Test" expanded="True" selected="True">
-            <Node name="FixtureFactoryTest" expanded="True">
-              <Node name="PropertyTest" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
