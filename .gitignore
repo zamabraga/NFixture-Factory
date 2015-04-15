@@ -1,0 +1,11 @@
+NFixtureFactory\bin
+NFixtureFactory\obj
+
+NFixtureFactoryTest\bin
+NFixtureFactoryTest\obj
+NFixtureFactoryTest/obj/Debug/Fixture-Factory-Test.pdb
+NFixtureFactoryTest/obj/
+NFixtureFactoryTest/bin/
+NFixtureFactory/bin/
+NFixtureFactory/obj/
+packages/
