@@ -5,8 +5,7 @@ using System.Reflection;
 
 namespace NFixtureFactory
 {
-	public class ObjectFactory
-	{
+	public class ObjectFactory<T>{
 
 		private TemplateHolder _templateHolder;
 
@@ -36,7 +35,7 @@ namespace NFixtureFactory
 		}
 
 
-		public T Gimme<T>(String label)
+		public T Gimme(String label)
 		{
 			Rule rule = FindRule(label);
 			return (T) CreateObject(rule);

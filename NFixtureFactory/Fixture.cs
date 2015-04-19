@@ -10,18 +10,20 @@ namespace NFixtureFactory
 
 		public static TemplateHolder Of(Type clazz)
 		{
-			TemplateHolder template = templates[clazz];
-			if(template == null)
-			{
-				template = new TemplateHolder(clazz);
-				templates.Add(clazz, template);
+			TemplateHolder template = null;
+			if (!templates.ContainsKey (clazz)) {
+				template = new TemplateHolder (clazz);
+				templates.Add (clazz, template);
+			} else {
+				template = templates [clazz];
 			}
 			return template;
 
 		}
 
-		public static ObjectFactory From(Type clazz) {
-			return new ObjectFactory(Of(clazz));
+		public static ObjectFactory<T> From<T>() {
+
+			return new ObjectFactory<T>(Of(typeof(T)));
 		} 
 
 

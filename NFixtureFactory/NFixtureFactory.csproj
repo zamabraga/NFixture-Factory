@@ -43,10 +43,15 @@
     <Compile Include="Resources.Designer.cs">
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Loader\ITemplateLoader.cs" />
+    <Compile Include="Loader\FixtureFactoryLoader.cs" />
+    <Compile Include="Util\ClassLoaderUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Functions\" />
     <Folder Include="Properties\" />
+    <Folder Include="Loader\" />
+    <Folder Include="Util\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

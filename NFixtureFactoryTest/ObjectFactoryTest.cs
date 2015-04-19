@@ -17,13 +17,13 @@ namespace NFixtureFactoryTest
 		[Test()]
 		public void ShouldCreateNewObject()
 		{
-			ObjectFactory objectFactory = new ObjectFactory (new TemplateHolder (typeof(Client))
+			ObjectFactory<Client> objectFactory = new ObjectFactory<Client>(new TemplateHolder (typeof(Client))
 				.AddTemplate (TEMPLATE_NAME, new Rule ()
 											.Add(PROPERTY_LABEL, PROPERTY_VALUE)											
 								 )
 			);
 
-			var obj = objectFactory.Gimme<Client>(TEMPLATE_NAME);
+			var obj = objectFactory.Gimme(TEMPLATE_NAME);
 			Assert.IsNotNull(obj);
 			Assert.IsInstanceOf<Client>(obj);
 			Assert.AreEqual (PROPERTY_VALUE, ((Client)obj).Name);
