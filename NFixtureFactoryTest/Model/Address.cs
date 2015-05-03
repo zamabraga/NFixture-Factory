@@ -4,11 +4,11 @@ namespace NFixtureFactoryTest.Model
 {
 	public class Address
 	{		
-		private String Street{ get; set;}
-		private String City{ get; set;}
-		private String State { get; set;}
-		private String Country { get; set;}
-		private String ZipCode { get; set;}
+		public String Street{ get; set;}
+		public String City{ get; set;}
+		public String State { get; set;}
+		public String Country { get; set;}
+		public Int32 ZipCode { get; set;}
 	}
 }
 

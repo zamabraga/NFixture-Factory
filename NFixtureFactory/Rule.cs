@@ -26,9 +26,15 @@ namespace NFixtureFactory
 			return this;
 		}
 
-		public void Add(String property, IFunction function){
+		public Rule Add(String property, IFunction function){
 		
 			_properties.Add(new Property(property, function ?? new IdentityFunction(null)));
+			return this;
+		}
+
+		public static IAssociationFunction<T> One<T>(String label)
+		{
+			return new AssociationFunction<T>(label);
 		}
 
 

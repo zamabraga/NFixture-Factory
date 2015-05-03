@@ -2,7 +2,7 @@
 
 namespace NFixtureFactory.Functions
 {
-	public class IdentityFunction : IAtomicFunction
+	public class IdentityFunction: IAtomicFunction
 	{
 
 		private Object _value;

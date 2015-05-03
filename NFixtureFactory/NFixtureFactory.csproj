@@ -46,6 +46,9 @@
     <Compile Include="Loader\ITemplateLoader.cs" />
     <Compile Include="Loader\FixtureFactoryLoader.cs" />
     <Compile Include="Util\ClassLoaderUtils.cs" />
+    <Compile Include="Functions\IAssociationFunction.cs" />
+    <Compile Include="Functions\AssociationFunction.cs" />
+    <Compile Include="Functions\FixtureFunction.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Functions\" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using NFixtureFactory.Functions;
+using System.Reflection;
 
 namespace NFixtureFactory
 {
@@ -35,7 +36,14 @@ namespace NFixtureFactory
 		public Property (String name, Object value) : this (name, new IdentityFunction(value)){}
 
 		public Object GetValue() {
-			return ((IAtomicFunction) Function).GenerateValue<Object>();
+
+			IAtomicFunction function = ((IAtomicFunction) Function);
+			Type type = typeof(Object);
+			if(Function.GetType().GenericTypeArguments.Length > 0)
+			 	type = Function.GetType ().GenericTypeArguments[0];
+			MethodInfo mi = function.GetType ().GetMethod ("GenerateValue");
+			MethodInfo method = mi.MakeGenericMethod(type);
+			return method.Invoke (function, null);	
 		}
 
 

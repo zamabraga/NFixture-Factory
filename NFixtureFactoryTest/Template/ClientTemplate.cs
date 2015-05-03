@@ -27,7 +27,7 @@ namespace NFixtureFactoryTest.Template
 			Fixture.Of(typeof(Client)).AddTemplate(VALID_TEMPLATE_NAME, 
 				new Rule()
 					.Add(PROPERTY_LABEL, PROPERTY_VALUE)
-					
+					.Add("Address", Rule.One<Address>(VALID_ADDRESS_TEMPLATE))	
 			);
 
 			Fixture.Of (typeof(Address)).AddTemplate (VALID_ADDRESS_TEMPLATE, 
