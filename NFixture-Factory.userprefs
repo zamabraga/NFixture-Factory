@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="NFixtureFactory/NFixtureFactory.csproj">
+﻿<Properties StartupItem="NFixtureFactory/NFixtureFactory.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="NFixtureFactoryTest/FixtureFactoryLoaderTest.cs">
     <Files>
@@ -7,23 +7,9 @@
       <File FileName="NFixtureFactoryTest/Template/ClientTemplate.cs" Line="1" Column="1" />
       <File FileName="NFixtureFactory/Rule.cs" Line="1" Column="1" />
       <File FileName="NFixtureFactory/Loader/FixtureFactoryLoader.cs" Line="1" Column="1" />
-      <File FileName="NFixtureFactory/Util/ClassLoaderUtils.cs" Line="4" Column="4" />
+      <File FileName="NFixtureFactory/Util/ClassLoaderUtils.cs" Line="1" Column="1" />
       <File FileName="NFixtureFactory/ObjectFactory.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True">
-          <Node name="NFixtureFactoryTest" expanded="True">
-            <Node name="NFixtureFactoryTest" expanded="True">
-              <Node name="FixtureFactoryLoaderTest" expanded="True">
-                <Node name="ShouldLoadClientTemplate" selected="True" />
-              </Node>
-              <Node name="ObjectFactoryTest" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
