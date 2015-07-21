@@ -7,3 +7,6 @@ C:\Users\zama.braga\Documents\git\fixture-factory-dot-net\NFixtureFactory\obj\x8
 C:\Users\zama.braga\Documents\git\fixture-factory-dot-net\NFixtureFactory\obj\x86\Debug\NFixtureFactory.csproj.GenerateResource.Cache
 C:\Users\zama.braga\Documents\git\fixture-factory-dot-net\NFixtureFactory\obj\x86\Debug\NFixtureFactory.dll
 C:\Users\zama.braga\Documents\git\fixture-factory-dot-net\NFixtureFactory\obj\x86\Debug\NFixtureFactory.pdb
+C:\Users\zama.braga\Documents\git\NFixture-Factory\NFixtureFactory\obj\x86\Debug\NFixtureFactory.csproj.GenerateResource.Cache
+C:\Users\zama.braga\Documents\git\NFixture-Factory\NFixtureFactory\obj\x86\Debug\NFixtureFactory.dll
+C:\Users\zama.braga\Documents\git\NFixture-Factory\NFixtureFactory\obj\x86\Debug\NFixtureFactory.pdb
