@@ -3,13 +3,12 @@ solution: NFixture-Factory.sln
 mono:
   - latest
 after_success:
-  - .\packages\OpenCover.4.6.166\OpenCover.Console.exe -register:user -target:"./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe" -targetargs:"/noresults /noisolation /testcontainer:""./NFixtureFactoryTest/bin/Release/NFixtureFactory.Tests.dll" -filter:"+[NFixture-Factory]*  -[NFixture-Factory]MyProject.Properties.*" -excludebyattribute:*.ExcludeFromCodeCoverage* -hideskipped:All -output:.\MyProject_coverage.xml
+  - .\packages\OpenCover.4.6.166\tools\OpenCover.Console.exe -register:user -target:"./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe" -targetargs:"/noresults /noisolation /testcontainer:""./NFixtureFactoryTest/bin/Release/NFixtureFactory.Tests.dll" -filter:"+[NFixture-Factory]*  -[NFixture-Factory]MyProject.Properties.*" -excludebyattribute:*.ExcludeFromCodeCoverage* -hideskipped:All -output:.\MyProject_coverage.xml
   - bash <(curl https://codecov.io/bash) 
 install:
   - sudo apt-get install -y gtk-sharp2
   - nuget restore NFixture-Factory.sln  
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
-  - nuget install OpenCover -Version 4.6.166 
 script:
   - xbuild /p:Configuration=Release NFixture-Factory.sln
   - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./NFixtureFactoryTest/bin/Release/NFixtureFactory.Tests.dll
