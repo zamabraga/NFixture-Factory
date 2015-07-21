@@ -2,7 +2,7 @@ language: csharp
 solution: NFixture-Factory.sln
 mono:
   - latest
-after_test: 
+after_success:
   - ./testrunner/OpenCover.4.6.166/tools/OpenCover.Console.exe -register:user -target:"./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe" -targetargs:"/noresults /noisolation /testcontainer:""./NFixtureFactoryTest/bin/Release/NFixtureFactory.Tests.dll" -filter:"+[NFixtureFactory.Tests]*  -[NFixtureFactory.Tests]NFixtureFactory.Tests.Properties.*" -excludebyattribute:*.ExcludeFromCodeCoverage* -hideskipped:All -output:.\MyProject_coverage.xml
   - bash <(curl https://codecov.io/bash) 
 install:
