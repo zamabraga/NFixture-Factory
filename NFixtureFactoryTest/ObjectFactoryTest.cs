@@ -2,10 +2,11 @@
 using NUnit.Framework;
 using NFixtureFactory;
 using NFixtureFactoryTest.Model;
+using System.Diagnostics.CodeAnalysis;
 
 namespace NFixtureFactoryTest
 {
-	[TestFixture ()]
+    [TestFixture(), ExcludeFromCodeCoverage]
 	public class ObjectFactoryTest
 	{
 
