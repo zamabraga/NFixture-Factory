@@ -2,10 +2,11 @@
 using System;
 using NFixtureFactory;
 using NFixtureFactory.Functions;
+using System.Diagnostics.CodeAnalysis;
 
 namespace NFixtureFactoryTest
 {
-	[TestFixture ()]
+    [TestFixture(), ExcludeFromCodeCoverage]
 	public class PropertyTest
 	{
 

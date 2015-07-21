@@ -4,10 +4,12 @@ using NFixtureFactory.Loader;
 using NFixtureFactoryTest.Model;
 using NFixtureFactory;
 using NFixtureFactoryTest.Template;
+using System.Diagnostics.CodeAnalysis;
 
 namespace NFixtureFactoryTest
 {
-	[TestFixture()]
+
+    [TestFixture(), ExcludeFromCodeCoverage]
 	public class FixtureFactoryLoaderTest
 	{
 		[SetUp]
