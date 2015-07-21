@@ -3,8 +3,8 @@ solution: NFixture-Factory.sln
 mono:
   - latest
 install:
+ - sudo apt-get install nunit-console
   - nuget restore NFixture-Factory.sln
-  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release NFixture-Factory.sln
   - nunit-console ./NFixtureFactoryTest/bin/Release/NFixtureFactory.Test.dll
