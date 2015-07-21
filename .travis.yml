@@ -3,7 +3,7 @@ solution: NFixture-Factory.sln
 mono:
   - latest
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t 8abcabf9-9e49-4066-8670-0591622238df
+  - bash <(curl -s https://codecov.io/bash)
 install:
   - sudo apt-get install -y gtk-sharp2
   - nuget restore NFixture-Factory.sln  
