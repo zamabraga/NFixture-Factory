@@ -1,6 +1,0 @@
-C:\Users\zama.braga\Documents\git\fixture-factory-dot-net\Fixture-Factory\bin\Debug\Fixture-Factory.dll
-C:\Users\zama.braga\Documents\git\fixture-factory-dot-net\Fixture-Factory\bin\Debug\Fixture-Factory.pdb
-C:\Users\zama.braga\Documents\git\fixture-factory-dot-net\Fixture-Factory\obj\x86\Debug\FixtureFactory.Resources.resources
-C:\Users\zama.braga\Documents\git\fixture-factory-dot-net\Fixture-Factory\obj\x86\Debug\Fixture-Factory.csproj.GenerateResource.Cache
-C:\Users\zama.braga\Documents\git\fixture-factory-dot-net\Fixture-Factory\obj\x86\Debug\Fixture-Factory.dll
-C:\Users\zama.braga\Documents\git\fixture-factory-dot-net\Fixture-Factory\obj\x86\Debug\Fixture-Factory.pdb
