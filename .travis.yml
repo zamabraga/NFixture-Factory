@@ -1,4 +1,4 @@
-language: csharp
+language: c
 solution: NFixture-Factory.sln
 mono:
   - latest
