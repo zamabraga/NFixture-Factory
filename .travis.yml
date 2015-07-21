@@ -8,5 +8,5 @@ install:
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release NFixture-Factory.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./NFixtureFactoryTest/bin/Release/NFixtureFactory.Test.dll
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./NFixtureFactoryTest/bin/Release/NFixtureFactory.Tests.dll
  
