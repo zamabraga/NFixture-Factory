@@ -3,8 +3,7 @@ solution: NFixture-Factory.sln
 mono:
   - latest
 install:
- - sudo apt-get install nunit-console
- - nuget restore NFixture-Factory.sln
+ - sudo apt-get install mono-devel mono-gmcs nunit-console
 script:
-  - xbuild /p:Configuration=Release NFixture-Factory.sln
+  - xbuild
   - nunit-console ./NFixtureFactoryTest/bin/Release/NFixtureFactory.Test.dll
