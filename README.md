@@ -1,3 +1,5 @@
+
+[![Build Status](https://travis-ci.org/six2six/fixture-factory.png?branch=master)](https://travis-ci.org/zamabraga/NFixture-Factory)
 # fixture-factory-dot-net
  https://github.com/six2six/fixture-factory
  
