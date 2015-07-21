@@ -4,7 +4,7 @@ mono:
   - latest
 install:
  - sudo apt-get install nunit-console
-  - nuget restore NFixture-Factory.sln
+ - nuget restore NFixture-Factory.sln
 script:
   - xbuild /p:Configuration=Release NFixture-Factory.sln
   - nunit-console ./NFixtureFactoryTest/bin/Release/NFixtureFactory.Test.dll
