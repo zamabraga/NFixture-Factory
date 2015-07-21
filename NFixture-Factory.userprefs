@@ -1,15 +1,27 @@
-﻿<Properties StartupItem="NFixtureFactory/NFixtureFactory.csproj" GitUserInfo="UsingGIT">
+﻿<Properties StartupItem="NFixtureFactory\NFixtureFactory.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NFixtureFactoryTest/FixtureFactoryLoaderTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NFixtureFactory\Functions\AssociationFunction.cs">
     <Files>
-      <File FileName="NFixtureFactoryTest/FixtureFactoryLoaderTest.cs" Line="4" Column="4" />
-      <File FileName="NFixtureFactory/Fixture.cs" Line="1" Column="1" />
-      <File FileName="NFixtureFactoryTest/Template/ClientTemplate.cs" Line="1" Column="1" />
-      <File FileName="NFixtureFactory/Rule.cs" Line="1" Column="1" />
-      <File FileName="NFixtureFactory/Loader/FixtureFactoryLoader.cs" Line="1" Column="1" />
-      <File FileName="NFixtureFactory/Util/ClassLoaderUtils.cs" Line="1" Column="1" />
-      <File FileName="NFixtureFactory/ObjectFactory.cs" Line="1" Column="1" />
+      <File FileName="NFixtureFactoryTest\Template\ClientTemplate.cs" Line="1" Column="1" />
+      <File FileName="NFixtureFactory\Functions\AssociationFunction.cs" Line="29" Column="4" />
+      <File FileName="NFixtureFactory\Resources\Resources.cs" Line="3" Column="26" />
+      <File FileName="NFixtureFactory\Property.cs" Line="25" Column="47" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NFixture-Factory" expanded="True">
+            <Node name="NFixtureFactory" expanded="True">
+              <Node name="Functions" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
+            <Node name="NFixtureFactoryTest" expanded="True" selected="True">
+              <Node name="Template" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>

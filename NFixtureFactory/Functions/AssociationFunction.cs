@@ -25,9 +25,9 @@ namespace NFixtureFactory.Functions
 
 		#region IAtomicFunction implementation
 
-		public T GenerateValue<T> ()
+		public TParam GenerateValue<TParam> ()
 		{
-			return new FixtureFunction (_labels).GenerateValue<T> ();
+			return new FixtureFunction (_labels).GenerateValue<TParam> ();
 		}
 
 		#endregion
