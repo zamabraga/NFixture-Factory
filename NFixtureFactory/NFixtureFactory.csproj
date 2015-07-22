@@ -47,6 +47,8 @@
     <Compile Include="Functions\AssociationFunction.cs" />
     <Compile Include="Functions\FixtureFunction.cs" />
     <Compile Include="Resources\Resources.cs" />
+    <Compile Include="Functions\Cpf.cs" />
+    <Compile Include="Functions\RandomFunction.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Functions\" />

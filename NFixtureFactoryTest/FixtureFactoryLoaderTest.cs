@@ -24,6 +24,7 @@ namespace NFixtureFactoryTest
 			Client client = Fixture.From<Client>().Gimme(ClientTemplate.VALID_TEMPLATE_NAME);
 			Assert.IsNotNull (client);
 			Assert.AreEqual (ClientTemplate.PROPERTY_VALUE, client.Name);
+			Assert.AreNotEqual (0, client.CPF);
 			Assert.NotNull (client.Address);
 			Assert.AreEqual (client.Address.Street, ClientTemplate.STREET);
 			Assert.AreEqual (client.Address.City, ClientTemplate.CITY);

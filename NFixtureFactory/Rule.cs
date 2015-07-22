@@ -32,6 +32,11 @@ namespace NFixtureFactory
 			return this;
 		}
 
+		public static Object Cpf()
+		{
+			return new Cpf().GenerateValue<Double>();	
+		}
+
 		public static IAssociationFunction<T> One<T>(String label)
 		{
 			return new AssociationFunction<T>(label);
