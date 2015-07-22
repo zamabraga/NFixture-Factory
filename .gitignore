@@ -13,3 +13,5 @@ packages/
 */bin
 */obj
 */packages/
+*.userprefs
+*.suo

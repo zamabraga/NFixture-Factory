@@ -24,13 +24,13 @@ namespace NFixtureFactoryTest.Template
 
 		public void Load ()
 		{
-			Fixture.Of(typeof(Client)).AddTemplate(VALID_TEMPLATE_NAME, 
+			Fixture.Of<Client>().AddTemplate(VALID_TEMPLATE_NAME, 
 				new Rule()
 					.Add(PROPERTY_LABEL, PROPERTY_VALUE)
 					.Add("Address", Rule.One<Address>(VALID_ADDRESS_TEMPLATE))	
 			);
 
-			Fixture.Of (typeof(Address)).AddTemplate (VALID_ADDRESS_TEMPLATE, 
+			Fixture.Of<Address>().AddTemplate (VALID_ADDRESS_TEMPLATE, 
 				new Rule ()
 				.Add("Street", STREET)
 				.Add("City", CITY)

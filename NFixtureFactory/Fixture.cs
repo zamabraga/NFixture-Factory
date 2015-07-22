@@ -6,16 +6,17 @@ namespace NFixtureFactory
 {
 	public class Fixture
 	{
-		private static IDictionary<Type, TemplateHolder> templates = new Dictionary<Type, TemplateHolder>();
+		private static IDictionary<Type, Object> templates = new Dictionary<Type, Object>();
 
-		public static TemplateHolder Of(Type clazz)
+		public static TemplateHolder<T> Of<T>()
 		{
-			TemplateHolder template = null;
+			Type clazz = typeof(T);
+			TemplateHolder<T> template = null;
 			if (!templates.ContainsKey (clazz)) {
-				template = new TemplateHolder (clazz);
+				template = new TemplateHolder<T>();
 				templates.Add (clazz, template);
 			} else {
-				template = templates [clazz];
+				template = (TemplateHolder<T>) templates [clazz];
 			}
 			return template;
 
@@ -23,7 +24,7 @@ namespace NFixtureFactory
 
 		public static ObjectFactory<T> From<T>() {
 
-			return new ObjectFactory<T>(Of(typeof(T)));
+			return new ObjectFactory<T>(Of<T>());
 		} 
 
 

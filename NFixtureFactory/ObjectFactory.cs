@@ -7,9 +7,9 @@ namespace NFixtureFactory
 {
 	public class ObjectFactory<T>{
 
-		private TemplateHolder _templateHolder;
+		private TemplateHolder<T> _templateHolder;
 
-		public ObjectFactory(TemplateHolder templateHolder) {
+		public ObjectFactory(TemplateHolder<T> templateHolder) {
 			_templateHolder = templateHolder;
 		}
 

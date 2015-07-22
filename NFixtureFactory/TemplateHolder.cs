@@ -4,10 +4,10 @@ using System.Collections.Generic;
 
 namespace NFixtureFactory
 {
-	public class TemplateHolder
+	public class TemplateHolder<TType>
 	{
 
-		private readonly IDictionary<String,Rule> _rules = new Dictionary<String, Rule>();
+		private readonly IDictionary<String, Rule> _rules = new Dictionary<String, Rule>();
 
 		public Type Clazz{ get; private set;}
 
@@ -17,12 +17,12 @@ namespace NFixtureFactory
 		}
 
 
-		public TemplateHolder (Type clazz)
+		public TemplateHolder ()
 		{
-			Clazz = clazz;
+			Clazz = typeof(TType);
 		}
 
-		public TemplateHolder AddTemplate(String label, Rule rule) {
+		public TemplateHolder<TType> AddTemplate(String label, Rule rule) {
 			_rules.Add(label, rule);
 			return this;
 		}

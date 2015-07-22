@@ -18,7 +18,8 @@ namespace NFixtureFactoryTest
 		[Test()]
 		public void ShouldCreateNewObject()
 		{
-			ObjectFactory<Client> objectFactory = new ObjectFactory<Client>(new TemplateHolder (typeof(Client))
+			
+			ObjectFactory<Client> objectFactory = new ObjectFactory<Client>(new TemplateHolder<Client>()
 				.AddTemplate (TEMPLATE_NAME, new Rule ()
 											.Add(PROPERTY_LABEL, PROPERTY_VALUE)											
 								 )
