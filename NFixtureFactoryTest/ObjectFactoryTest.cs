@@ -12,7 +12,7 @@ namespace NFixtureFactoryTest
 
 		private readonly String PROPERTY_LABEL = "Name";
 		private readonly String PROPERTY_VALUE = "Same Name";
-		private readonly String TEMPLATE_NAME = "Valid";
+		private readonly String TEMPLATE_NAME = "ShouldCreateNewObject Test Template";
 
 
 		[Test()]

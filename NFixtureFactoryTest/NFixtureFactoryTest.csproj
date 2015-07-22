@@ -47,6 +47,7 @@
     <Compile Include="Model\Address.cs" />
     <Compile Include="Model\Company.cs" />
     <Compile Include="Template\CompanyTemplate.cs" />
+    <Compile Include="Template\AddressTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />

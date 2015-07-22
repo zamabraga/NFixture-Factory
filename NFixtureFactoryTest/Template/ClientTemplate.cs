@@ -10,15 +10,9 @@ namespace NFixtureFactoryTest.Template
 
 		public static readonly String PROPERTY_LABEL = "Name";
 		public static readonly String PROPERTY_VALUE = "Same Name";
-		public static  readonly String VALID_TEMPLATE_NAME = "Valid";
+		public static  readonly String VALID_TEMPLATE_NAME = "Client Valid";
 
-		public static  readonly String VALID_ADDRESS_TEMPLATE = "Valid Address";
-		public static  readonly String STREET = "AV. JK";
-		public static  readonly String CITY = "Brasilia";
-		public static  readonly String STATE = "Distrito Federal";
-		public static  readonly String COUNTRY = "Brazil";
-		public static  readonly Int32 ZIPCODE = 72000000;
-			
+
 
 		#region ITemplateLoader implementation
 
@@ -27,19 +21,10 @@ namespace NFixtureFactoryTest.Template
 			Fixture.Of<Client>().AddTemplate(VALID_TEMPLATE_NAME, 
 				new Rule()
 					.Add(PROPERTY_LABEL, PROPERTY_VALUE)
-					.Add("Address", Rule.One<Address>(VALID_ADDRESS_TEMPLATE))
+					.Add("Address", Rule.One<Address>(AddressTemplate.VALID_ADDRESS_TEMPLATE))
 				    .Add("CPF", Rule.Cpf())
-
 			);
 
-			Fixture.Of<Address>().AddTemplate (VALID_ADDRESS_TEMPLATE, 
-				new Rule ()
-				.Add("Street", STREET)
-				.Add("City", CITY)
-				.Add("State", STATE)
-				.Add("Country", COUNTRY)
-				.Add("ZipCode", ZIPCODE)
-			);
 		}
 
 		#endregion

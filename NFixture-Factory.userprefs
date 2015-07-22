@@ -1,17 +1,32 @@
 ﻿<Properties StartupItem="NFixtureFactory\NFixtureFactory.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="NFixtureFactoryTest\ObjectFactoryTest.cs">
     <Files>
-      <File FileName="NFixtureFactoryTest\Template\ClientTemplate.cs" Line="1" Column="1" />
-      <File FileName="NFixtureFactory\Functions\AssociationFunction.cs" Line="38" Column="1" />
-      <File FileName="NFixtureFactory\Resources\Resources.cs" Line="1" Column="1" />
-      <File FileName="NFixtureFactory\Property.cs" Line="1" Column="1" />
-      <File FileName="NFixtureFactoryTest\PropertyTest.cs" Line="34" Column="4" />
+      <File FileName="NFixtureFactory\ObjectFactory.cs" Line="13" Column="37" />
+      <File FileName="NFixtureFactoryTest\ObjectFactoryTest.cs" Line="28" Column="47" />
+      <File FileName="NFixtureFactory\TemplateHolder.cs" Line="26" Column="1" />
+      <File FileName="NFixtureFactoryTest\FixtureFactoryLoaderTest.cs" Line="37" Column="3" />
+      <File FileName="NFixtureFactoryTest\Template\CompanyTemplate.cs" Line="8" Column="30" />
     </Files>
     <Pads>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>_rules</Value>
+        </State>
+      </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
         <State name="__root__">
-          <Node name="NFixture-Factory" expanded="True" selected="True" />
+          <Node name="NFixture-Factory" expanded="True">
+            <Node name="NFixtureFactoryTest" expanded="True">
+              <Node name="NFixtureFactoryTest" expanded="True">
+                <Node name="FixtureFactoryLoaderTest" expanded="True">
+                  <Node name="ShouldLoadCompanyTemplate" selected="True" />
+                </Node>
+                <Node name="ObjectFactoryTest" expanded="True" />
+                <Node name="PropertyTest" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

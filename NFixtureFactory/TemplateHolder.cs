@@ -22,8 +22,9 @@ namespace NFixtureFactory
 			Clazz = typeof(TType);
 		}
 
-		public TemplateHolder<TType> AddTemplate(String label, Rule rule) {
-			_rules.Add(label, rule);
+		public TemplateHolder<TType> AddTemplate(String label, Rule rule) {			
+            if(_rules.Keys.Contains(label) == false)
+                _rules.Add(label, rule);
 			return this;
 		}
 

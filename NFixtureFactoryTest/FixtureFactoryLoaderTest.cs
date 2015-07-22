@@ -26,26 +26,26 @@ namespace NFixtureFactoryTest
 			Assert.AreEqual (ClientTemplate.PROPERTY_VALUE, client.Name);
 			Assert.AreNotEqual (0, client.CPF);
 			Assert.NotNull (client.Address);
-			Assert.AreEqual (client.Address.Street, ClientTemplate.STREET);
-			Assert.AreEqual (client.Address.City, ClientTemplate.CITY);
-			Assert.AreEqual (client.Address.State, ClientTemplate.STATE);
-			Assert.AreEqual (client.Address.Country, ClientTemplate.COUNTRY);
-			Assert.AreEqual (client.Address.ZipCode, ClientTemplate.ZIPCODE);
+			Assert.AreEqual (client.Address.Street, AddressTemplate.STREET);
+			Assert.AreEqual (client.Address.City, AddressTemplate.CITY);
+			Assert.AreEqual (client.Address.State, AddressTemplate.STATE);
+			Assert.AreEqual (client.Address.Country, AddressTemplate.COUNTRY);
+			Assert.AreEqual (client.Address.ZipCode, AddressTemplate.ZIPCODE);
 		}
 
 		[Test()]
 		public void ShouldLoadCompanyTemplate()
 		{
-			Company company = Fixture.From<Company>().Gimme(CompanyTemplate.VALID_TEMPLATE_NAME);
+			Company company = Fixture.From<Company>().Gimme(CompanyTemplate.VALID_COMPANY_TEMPLATE_NAME);
 			Assert.IsNotNull (company);
 			Assert.AreEqual (CompanyTemplate.PROPERTY_VALUE, company.Name);
 			Assert.AreNotEqual (0, company.CNPJ);
 			Assert.NotNull (company.Address);
-			Assert.AreEqual (company.Address.Street, CompanyTemplate.STREET);
-			Assert.AreEqual (company.Address.City, CompanyTemplate.CITY);
-			Assert.AreEqual (company.Address.State, CompanyTemplate.STATE);
-			Assert.AreEqual (company.Address.Country, CompanyTemplate.COUNTRY);
-			Assert.AreEqual (company.Address.ZipCode, CompanyTemplate.ZIPCODE);
+			Assert.AreEqual (company.Address.Street, AddressTemplate.STREET);
+			Assert.AreEqual (company.Address.City, AddressTemplate.CITY);
+			Assert.AreEqual (company.Address.State, AddressTemplate.STATE);
+			Assert.AreEqual (company.Address.Country, AddressTemplate.COUNTRY);
+			Assert.AreEqual (company.Address.ZipCode, AddressTemplate.ZIPCODE);
 		}
 
 	}

@@ -8,11 +8,11 @@ namespace NFixtureFactoryTest.Template
 	public class CompanyTemplate : ITemplateLoader
 	{
 
-		public static readonly String PROPERTY_LABEL = "Name";
-		public static readonly String PROPERTY_VALUE = "Same Name";
-		public static  readonly String VALID_TEMPLATE_NAME = "Valid";
 
-		public static  readonly String VALID_ADDRESS_TEMPLATE = "Valid Company Address";
+		public static readonly String PROPERTY_VALUE = "Same Company";
+		public static  readonly String VALID_COMPANY_TEMPLATE_NAME = "Company Valid";
+
+		public static  readonly String VALID_COMPANY_ADDRESS_TEMPLATE = "Valid Company Address";
 		public static  readonly String STREET = "AV. JK";
 		public static  readonly String CITY = "Brasilia";
 		public static  readonly String STATE = "Distrito Federal";
@@ -24,21 +24,11 @@ namespace NFixtureFactoryTest.Template
 
 		public void Load ()
 		{
-			Fixture.Of<Company>().AddTemplate(VALID_TEMPLATE_NAME, 
+			Fixture.Of<Company>().AddTemplate(VALID_COMPANY_TEMPLATE_NAME, 
 				new Rule()
-					.Add(PROPERTY_LABEL, PROPERTY_VALUE)
-					.Add("Address", Rule.One<Address>(VALID_ADDRESS_TEMPLATE))
+					.Add("Name", PROPERTY_VALUE)
+					.Add("Address", Rule.One<Address>(AddressTemplate.VALID_ADDRESS_TEMPLATE))
 					.Add("CNPJ", Rule.Cnpj())
-
-			);
-
-			Fixture.Of<Address>().AddTemplate (VALID_ADDRESS_TEMPLATE, 
-				new Rule ()
-				.Add("Street", STREET)
-				.Add("City", CITY)
-				.Add("State", STATE)
-				.Add("Country", COUNTRY)
-				.Add("ZipCode", ZIPCODE)
 			);
 		}
 
