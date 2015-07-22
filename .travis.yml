@@ -3,22 +3,13 @@ solution: NFixture-Factory.sln
 mono:
   - latest
 after_success:
-  - ./testrunner/OpenCover.4.6.166/tools/OpenCover.Console.exe -register:user -target:"./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe" -targetargs:"/noresults /noisolation /testcontainer:""./NFixtureFactoryTest/bin/Release/NFixtureFactory.Tests.dll" -filter:"+[NFixtureFactory.Tests]*  -[NFixtureFactory.Tests]NFixtureFactory.Tests.Properties.*" -excludebyattribute:*.ExcludeFromCodeCoverage* -hideskipped:All -output:.\MyProject_coverage.xml
+  - ./testrunner/OpenCover.4.6.166/tools/OpenCover.Console.exe -target:"./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe" -targetargs:"/noresults /noisolation /testcontainer:""./NFixtureFactoryTest/bin/Release/NFixtureFactory.Tests.dll" -filter:"+[NFixtureFactory.Tests]*  -[NFixtureFactory.Tests]NFixtureFactory.Tests.Properties.*" -excludebyattribute:*.ExcludeFromCodeCoverage* -hideskipped:All -output:.\MyProject_coverage.xml
   - bash <(curl https://codecov.io/bash) 
 install:
   - sudo apt-get install -y gtk-sharp2
   - nuget restore NFixture-Factory.sln  
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
-  - curl -sS https://api.nuget.org/packages/mono.cecil.0.9.5.4.nupkg > /tmp/mono.cecil.0.9.5.4.nupkg.zip
-  - unzip /tmp/mono.cecil.0.9.5.4.nupkg.zip -d /testrunner/cecil
-  - cp /testrunner/cecil/lib/net40/Mono.Cecil.dll .
-  - cp /testrunner/cecil/lib/net40/Mono.Cecil.dll /tmp/cecil/
-  - git clone --depth=50 git://github.com/csMACnz/monocov.git testrunner/monocov
-  - cd testrunner/monocov
-  - cp /testrunner/cecil/Mono.Cecil.dll .
-  - ./configure
-  - make
-  - sudo make install
+  - nuget install OpenCover -Version 4.6.166 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release NFixture-Factory.sln
   - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./NFixtureFactoryTest/bin/Release/NFixtureFactory.Tests.dll
