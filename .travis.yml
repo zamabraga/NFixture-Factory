@@ -19,7 +19,6 @@ install:
   - ./configure
   - make
   - sudo make install
-  - cd ../../csMACnz/Coveralls.net-Samples
 script:
   - xbuild /p:Configuration=Release NFixture-Factory.sln
   - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./NFixtureFactoryTest/bin/Release/NFixtureFactory.Tests.dll
