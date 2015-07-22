@@ -49,6 +49,7 @@
     <Compile Include="Resources\Resources.cs" />
     <Compile Include="Functions\Cpf.cs" />
     <Compile Include="Functions\RandomFunction.cs" />
+    <Compile Include="Functions\Cnpj.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Functions\" />
