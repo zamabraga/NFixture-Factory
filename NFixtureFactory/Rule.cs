@@ -48,6 +48,11 @@ namespace NFixtureFactory
 			return new AssociationFunction<T>(label);
 		}
 
+		public static IAssociationFunction<IEnumerable<T>> Has<T>(Int32 quantity)
+		{
+			return new AssociationFunction<IEnumerable<T>>(quantity);
+		}
+
 
 
 	}

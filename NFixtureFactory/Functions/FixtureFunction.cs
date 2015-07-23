@@ -29,6 +29,7 @@ namespace NFixtureFactory.Functions
 
 		public T GenerateValue<T> ()
 		{
+			
 			return Generate<T>(Fixture.From<T>());
 		}
 

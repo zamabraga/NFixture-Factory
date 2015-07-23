@@ -22,7 +22,7 @@ namespace NFixtureFactoryTest.Template
 				new Rule()
 					.Add(PROPERTY_LABEL, PROPERTY_VALUE)
 					.Add("Address", Rule.One<Address>(AddressTemplate.VALID_ADDRESS_TEMPLATE))
-					.Add("Phones", Rule.Has<Phone>(QUANTITY_OF_PHONES).Of(PhoneTemplate.Valid_Template))
+					//.Add("Phones", Rule.Has<Phone>(QUANTITY_OF_PHONES).Of(PhoneTemplate.Valid_Template))
 				    .Add("CPF", Rule.Cpf())
 			);
 

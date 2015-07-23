@@ -48,6 +48,8 @@
     <Compile Include="Model\Company.cs" />
     <Compile Include="Template\CompanyTemplate.cs" />
     <Compile Include="Template\AddressTemplate.cs" />
+    <Compile Include="Template\PhoneTemplate.cs" />
+    <Compile Include="Model\Phone.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
