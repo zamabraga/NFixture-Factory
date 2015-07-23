@@ -12,7 +12,7 @@ namespace NFixtureFactoryTest
     [TestFixture(), ExcludeFromCodeCoverage]
 	public class FixtureFactoryLoaderTest
 	{
-		[SetUp]
+		[TestFixtureSetUp()]
 		public void SetUp()
 		{
 			FixtureFactoryLoader.LoadTemplates();
@@ -46,6 +46,12 @@ namespace NFixtureFactoryTest
 			Assert.AreEqual (company.Address.State, AddressTemplate.STATE);
 			Assert.AreEqual (company.Address.Country, AddressTemplate.COUNTRY);
 			Assert.AreEqual (company.Address.ZipCode, AddressTemplate.ZIPCODE);
+		}
+
+		[Test()]
+		public void ShouldNotAddTempaleWithExistName()
+		{			
+			Assert.Throws<ApplicationException>(() => FixtureFactoryLoader.LoadTemplates(), Resources.EXCEPTION_MESSAGE_EXIST_RULE_LABEL);
 		}
 
 	}

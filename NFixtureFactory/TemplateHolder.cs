@@ -23,8 +23,10 @@ namespace NFixtureFactory
 		}
 
 		public TemplateHolder<TType> AddTemplate(String label, Rule rule) {			
-            if(_rules.Keys.Contains(label) == false)
-                _rules.Add(label, rule);
+			if (_rules.Keys.Contains (label))
+				throw new ApplicationException (Resources.EXCEPTION_MESSAGE_EXIST_RULE_LABEL);	
+            
+			_rules.Add(label, rule);
 			return this;
 		}
 

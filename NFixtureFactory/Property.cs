@@ -22,11 +22,11 @@ namespace NFixtureFactory
 		public Property (String name, IFunction function)
 		{
 			if (String.IsNullOrWhiteSpace (name)) {
-				throw new ArgumentNullException (Resources.PROPERTY_NAME_NULL);
+				throw new ArgumentNullException (Resources.EXCEPTION_MESSAGE_PROPERTY_NAME_NULL);
 			}
 
 			if (function == null) {
-				throw new ArgumentNullException (Resources.PROPERTY_FUNCTION_NULL);
+				throw new ArgumentNullException (Resources.EXCEPTION_MESSAGE_PROPERTY_FUNCTION_NULL);
 			}
 
 			Name = name;

@@ -17,7 +17,7 @@ namespace NFixtureFactory
 			Rule rule = _templateHolder.GetRule (label);
 
 			if (rule == null) {
-				throw new InvalidOperationException(String.Format(Resources.NO_SUCH_LABEL_MESSAGE, _templateHolder.Clazz.Name, label));
+				throw new InvalidOperationException(String.Format(Resources.EXCEPTION_MESSAGE_NO_SUCH_LABEL_MESSAGE, _templateHolder.Clazz.Name, label));
 			}
 			return rule;
 		}
