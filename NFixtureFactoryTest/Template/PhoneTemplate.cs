@@ -15,7 +15,7 @@ namespace NFixtureFactoryTest.Template
 
 			Fixture.Of<Phone>().AddTemplate (Valid_Template, 
 				new Rule ()
-				.Add("Number", 55555555)
+				            .Add("Number", 55555555)
 			);
 		}
 

@@ -25,12 +25,14 @@ namespace NFixtureFactoryTest
 			Assert.IsNotNull (client);
 			Assert.AreEqual (ClientTemplate.PROPERTY_VALUE, client.Name);
 			Assert.AreNotEqual (0, client.CPF);
-			Assert.NotNull (client.Address);
+			Assert.NotNull (client.Address);            
 			Assert.AreEqual (client.Address.Street, AddressTemplate.STREET);
 			Assert.AreEqual (client.Address.City, AddressTemplate.CITY);
 			Assert.AreEqual (client.Address.State, AddressTemplate.STATE);
 			Assert.AreEqual (client.Address.Country, AddressTemplate.COUNTRY);
 			Assert.AreEqual (client.Address.ZipCode, AddressTemplate.ZIPCODE);
+            Assert.IsNotNull(client.Phones);
+            Assert.AreEqual(ClientTemplate.QUANTITY_OF_PHONES, client.Phones.Count);
 		}
 
 		[Test()]

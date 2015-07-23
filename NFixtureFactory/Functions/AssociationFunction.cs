@@ -32,7 +32,7 @@ namespace NFixtureFactory.Functions
 
 		public TParam GenerateValue<TParam> ()
 		{
-			return new FixtureFunction (_labels).GenerateValue<TParam> ();
+			return new FixtureFunction (_labels, _quantity).GenerateValue<TParam> ();
 		}
 
 		public IAssociationFunction<T> Of(String label) {
