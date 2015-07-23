@@ -4,7 +4,7 @@ namespace NFixtureFactoryTest.Model
 {
 	public class Phone
 	{
-		public Double Number { get; set; }
+		public Decimal Number { get; set; }
 	}
 }
 

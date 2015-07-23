@@ -6,7 +6,7 @@ namespace NFixtureFactoryTest.Model
 	{
 		public String Name {get;set;}
 		public Address Address { get; set; }
-		public Double CNPJ {get;set;}
+        public Decimal CNPJ { get; set; }
 	}
 }
 

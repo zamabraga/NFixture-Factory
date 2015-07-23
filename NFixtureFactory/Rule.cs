@@ -34,12 +34,12 @@ namespace NFixtureFactory
 
 		public static Object Cpf()
 		{
-			return new Cpf().GenerateValue<Double>();	
+			return new Cpf().GenerateValue<Decimal>();	
 		}
 
 		public static Object Cnpj()
 		{
-			return new Cnpj().GenerateValue<Double>();	
+            return new Cnpj().GenerateValue<Decimal>();	
 		}
 
 
