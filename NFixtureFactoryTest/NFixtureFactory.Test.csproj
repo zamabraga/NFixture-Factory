@@ -3,11 +3,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C076DB51-4648-4B11-B008-129794A13B20}</ProjectGuid>
+    <ProjectGuid>{87C896B4-1D43-46E5-8A64-45440179B179}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>NFixtureFactoryTest</RootNamespace>
     <AssemblyName>NFixtureFactory.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,6 +47,11 @@
     <Compile Include="FixtureFactoryLoaderTest.cs" />
     <Compile Include="Template\ClientTemplate.cs" />
     <Compile Include="Model\Address.cs" />
+    <Compile Include="Model\Company.cs" />
+    <Compile Include="Model\Phone.cs" />
+    <Compile Include="Template\AddressTemplate.cs" />
+    <Compile Include="Template\CompanyTemplate.cs" />
+    <Compile Include="Template\PhoneTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
@@ -52,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NFixtureFactory\NFixtureFactory.csproj">
-      <Project>{B59B426C-22DA-456D-8C13-AD0674ECAACE}</Project>
+      <Project>{C076DB51-4648-4B11-B008-129794A13B20}</Project>
       <Name>NFixtureFactory</Name>
     </ProjectReference>
   </ItemGroup>

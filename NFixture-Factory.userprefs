@@ -3,16 +3,13 @@
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True" />
+        <State expanded="True" />
       </Pad>
       <Pad Id="ClassPad">
         <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
-      </Pad>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True" selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
