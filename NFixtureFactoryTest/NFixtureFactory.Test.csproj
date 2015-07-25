@@ -6,7 +6,7 @@
     <ProjectGuid>{87C896B4-1D43-46E5-8A64-45440179B179}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>NFixtureFactoryTest</RootNamespace>
-    <AssemblyName>NFixtureFactory.Test</AssemblyName>
+    <AssemblyName>NFixtureFactory.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <ProductVersion>12.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>

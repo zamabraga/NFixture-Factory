@@ -3,13 +3,26 @@
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" />
+        <State expanded="True">
+          <Node name="NFixtureFactory.Test" selected="True" />
+        </State>
       </Pad>
       <Pad Id="ClassPad">
         <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True">
+          <Node name="NFixtureFactory.Test" expanded="True">
+            <Node name="NFixtureFactoryTest" expanded="True">
+              <Node name="FixtureFactoryLoaderTest" expanded="True">
+                <Node name="ShouldLoadClientTemplate" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
