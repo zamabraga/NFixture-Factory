@@ -1,27 +1,18 @@
 ﻿<Properties StartupItem="NFixtureFactory\NFixtureFactory.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NFixtureFactory\Functions\FixtureFunction.cs">
-    <Files>
-      <File FileName="NFixtureFactory\Functions\AssociationFunction.cs" Line="17" Column="3" />
-      <File FileName="NFixtureFactory\Functions\FixtureFunction.cs" Line="40" Column="56" />
-      <File FileName="NFixtureFactory\Property.cs" Line="46" Column="43" />
-      <File FileName="NFixtureFactoryTest\Template\ClientTemplate.cs" Line="25" Column="29" />
-      <File FileName="NFixtureFactory\Rule.cs" Line="53" Column="34" />
-      <File FileName="c:\Users\zama.braga\Documents\git\NFixture-Factory\NFixtureFactoryTest\FixtureFactoryLoaderTest.cs" Line="23" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State name="__root__">
-          <Node name="NFixture-Factory" expanded="True">
-            <Node name="NFixtureFactoryTest" expanded="True">
-              <Node name="NFixtureFactoryTest" expanded="True">
-                <Node name="FixtureFactoryLoaderTest" expanded="True">
-                  <Node name="ShouldLoadClientTemplate" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
+        <State selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
