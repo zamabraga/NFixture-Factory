@@ -33,7 +33,6 @@
     <Reference Include="System" />
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
-      <Package>nunit</Package>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -60,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NFixtureFactory\NFixtureFactory.csproj">
-      <Project>{B59B426C-22DA-456D-8C13-AD0674ECAACE}</Project>
+      <Project>{C076DB51-4648-4B11-B008-129794A13B20}</Project>
       <Name>NFixtureFactory</Name>
     </ProjectReference>
   </ItemGroup>
