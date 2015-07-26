@@ -1,10 +1,20 @@
 ﻿<Properties StartupItem="NFixtureFactory\NFixtureFactory.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="NFixtureFactoryTest/FixtureFactoryLoaderTest.cs">
+    <Files>
+      <File FileName="NFixtureFactory/Fixture.cs" Line="1" Column="1" />
+      <File FileName="NFixtureFactory/ObjectFactory.cs" Line="44" Column="30" />
+      <File FileName="NFixtureFactoryTest/FixtureFactoryLoaderTest.cs" Line="9" Column="19" />
+      <File FileName="NFixtureFactoryTest/Model/Client.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="NFixtureFactory.Test" selected="True" />
+        <State expanded="True" selected="True">
+          <Node name="NFixtureFactory" expanded="True" />
+          <Node name="NFixtureFactory.Test" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="Model" expanded="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">
@@ -14,12 +24,10 @@
         <State />
       </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True">
+        <State expanded="True" selected="True">
           <Node name="NFixtureFactory.Test" expanded="True">
             <Node name="NFixtureFactoryTest" expanded="True">
-              <Node name="FixtureFactoryLoaderTest" expanded="True">
-                <Node name="ShouldLoadClientTemplate" selected="True" />
-              </Node>
+              <Node name="FixtureFactoryLoaderTest" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -28,13 +36,10 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/zama/Documentos/git/fixture-factory-dot-net/NFixtureFactory/Loader/FixtureFactoryLoader.cs" line="15" column="1" />
-      <Breakpoint file="C:\Users\zama.braga\Documents\git\NFixture-Factory\NFixtureFactory\Functions\FixtureFunction.cs" line="38" column="1" />
+      <Breakpoint file="/home/zama/Documents/projects/nfixture-factory/NFixtureFactoryTest/FixtureFactoryLoaderTest.cs" line="26" column="1" />
+      <Breakpoint file="/home/zama/Documents/projects/nfixture-factory/NFixtureFactory/ObjectFactory.cs" line="28" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="NFixtureFactory\ObjectFactory.cs" line="17" offsetX="692" offsetY="384" expression="_templateHolder" liveUpdate="False" />
-    <Watch file="NFixtureFactory\Functions\FixtureFunction.cs" line="40" offsetX="884" offsetY="975" expression="outValue" liveUpdate="False" />
-  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <AuthorInfo Name="Zama Bandeira Braga" Email="zama.braga@live.com" Copyright="" Company="" Trademark="" />
 </Properties>
