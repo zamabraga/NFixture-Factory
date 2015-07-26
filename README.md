@@ -32,6 +32,10 @@ Gimme one object from label "valid"
 
 	Client client = Fixture.From<Client>().Gimme(valid);
 
+Gimme N objects from label "valid"
+
+	List<Client> clients = Fixture.From<Client>().Gimme(5, valid);
+
 
 ### Managing Templates
 
@@ -62,7 +66,8 @@ All templates can be loaded using FixtureFactoryLoader
 
 	FixtureFactoryLoader.LoadTemplates();
 
-Example of loading templates with JUnit tests
+
+Example of loading templates with NUnit tests
 
 	[TestFixtureSetUp()]
 	public void SetUp()

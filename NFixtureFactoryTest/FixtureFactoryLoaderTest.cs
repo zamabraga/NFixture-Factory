@@ -5,6 +5,8 @@ using NFixtureFactoryTest.Model;
 using NFixtureFactory;
 using NFixtureFactoryTest.Template;
 using System.Diagnostics.CodeAnalysis;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace NFixtureFactoryTest
 {
@@ -33,6 +35,15 @@ namespace NFixtureFactoryTest
 			Assert.AreEqual (client.Address.ZipCode, AddressTemplate.ZIPCODE);
             Assert.IsNotNull(client.Phones);
             Assert.AreEqual(ClientTemplate.QUANTITY_OF_PHONES, client.Phones.Count);
+		}
+
+		[Test()]
+		public void ShouldLoadFiveClientTemplate()
+		{
+			IEnumerable<Client> clients = Fixture.From<Client>().Gimme(5, ClientTemplate.VALID_TEMPLATE_NAME);
+			Assert.IsNotNull (clients);
+			Assert.AreEqual(5, clients.Count());
+
 		}
 
 		[Test()]

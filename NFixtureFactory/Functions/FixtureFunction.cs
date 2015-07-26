@@ -45,7 +45,7 @@ namespace NFixtureFactory.Functions
 
 			for (int i = 0; i < _quantity; i++) {
 
-                var obj = objectFactory.GetType().GetMethod("Gimme").Invoke(objectFactory, new[] { _labels.First() });  
+				var obj = objectFactory.GetType().GetMethod("Gimme", new Type[] { typeof(String) }).Invoke(objectFactory, new[] { _labels.First() });  
                 outValue.GetType().GetMethod("Add").Invoke(outValue, new[] { obj });              
                
 			}

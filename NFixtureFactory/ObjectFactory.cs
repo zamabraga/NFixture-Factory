@@ -28,7 +28,7 @@ namespace NFixtureFactory
 			Object obj = Activator.CreateInstance (_templateHolder.Clazz);
 			foreach (var property in rule.Properties) {
 				
-				_templateHolder.Clazz.InvokeMember (property.Name, BindingFlags.SetProperty, null, obj, new object[]{ property.GetValue()});
+				_templateHolder.Clazz.InvokeMember(property.Name, BindingFlags.SetProperty, null, obj, new object[]{ property.GetValue()});
 			}
 
 			return obj;
@@ -39,6 +39,18 @@ namespace NFixtureFactory
 		{
 			Rule rule = FindRule(label);
 			return (T) CreateObject(rule);
+		}
+
+		public IEnumerable<T> Gimme(Int32 quantity, String label)
+		{
+			IList<T> list = new List<T> ();
+			Rule rule = FindRule (label);
+			for (int i = 0; i < quantity; i++) {
+				list.Add ((T) CreateObject (rule));
+			}
+
+			return list;
+
 		}
 
 
