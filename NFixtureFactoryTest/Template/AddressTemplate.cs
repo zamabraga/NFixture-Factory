@@ -5,30 +5,30 @@ using NFixtureFactory;
 
 namespace NFixtureFactoryTest.Template
 {
-	public class AddressTemplate : ITemplateLoader
-	{
-		public static  readonly String VALID_ADDRESS_TEMPLATE = "Valid Address";
-		public static  readonly String STREET = "AV. JK";
-		public static  readonly String CITY = "Brasilia";
-		public static  readonly String STATE = "Distrito Federal";
-		public static  readonly String COUNTRY = "Brazil";
-		public static  readonly Int32 ZIPCODE = 72000000;
+    public class AddressTemplate : ITemplateLoader
+    {
+        public static readonly String VALID_ADDRESS_TEMPLATE = "Valid Address";
+        public static readonly String STREET = "Castelo";
+        public static readonly String CITY = "Cidade Alta";
+        public static readonly String STATE = "Terras Altas de Rennar";
+        public static readonly String COUNTRY = "Ancrath";
+        public static readonly Int32 ZIPCODE = 72000000;
 
-		#region ITemplateLoader implementation
+        #region ITemplateLoader implementation
 
-		public void Load ()		{
-			
-			Fixture.Of<Address>().AddTemplate (VALID_ADDRESS_TEMPLATE, 
-				new Rule ()
-				.Add("Street", STREET)
-				.Add("City", CITY)
-				.Add("State", STATE)
-				.Add("Country", COUNTRY)
-				.Add("ZipCode", ZIPCODE)
-			);
-		}
+        public void Load()
+        {
 
-		#endregion
-	}
+            Fixture.Of<Address>().AddTemplate(VALID_ADDRESS_TEMPLATE)
+                                    .ForMember(e => e.Street, STREET)
+                                    .ForMember(e => e.City, CITY)
+                                    .ForMember(e => e.State, STATE)
+                                    .ForMember(e => e.Country, COUNTRY)
+                                    .ForMember(e => e.ZipCode, ZIPCODE);
+
+        }
+
+        #endregion
+    }
 }
 
