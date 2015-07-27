@@ -26,24 +26,37 @@ Writing template rules
 				
 			);
 
+or
+
+	Fixture.Of<Client>().AddTemplate("valid") 
+				.ForMember(e => e.Name, "Jorg Ancrath")
+				.ForMember(e => e.Address, Rule.One<Address>("Valid Address"))					
+				.ForMember(e => e.CPF, Rule.Cpf());
+
+	Fixture.Of<Address>().AddTemplate ("Valid Address")
+				.ForMember(e => e.Street, "Castelo")
+				.ForMember(e => e.City, "Cidade Alta")
+				.ForMember(e => e.State, "Terras Altas de Rennar")
+				.ForMember(e => e.Country, "Ancrath");	
+
 Using on your tests code:
 
 Gimme one object from label "valid"
 
-	Client client = Fixture.From<Client>().Gimme(valid);
+	Client client = Fixture.From<Client>().Gimme("valid");
 
 Gimme N objects from label "valid"
 
-	List<Client> clients = Fixture.From<Client>().Gimme(5, valid);
+	List<Client> clients = Fixture.From<Client>().Gimme(5, "valid");
 
 
 ### Managing Templates
 
 Templates can be written within TemplateLoader interface
 
-	public class ClientTemplateLoader implements TemplateLoader {
-	    @Override
-	    public void load() {
+	public class ClientTemplate : ITemplateLoader {
+	   
+	    public void Load() {
 	        Fixture.Of<Client>().AddTemplate("valid", 
 				new Rule()
 					.Add("Name", "Jorg Ancrath")
@@ -62,6 +75,24 @@ Templates can be written within TemplateLoader interface
 	    }
 	}
 
+or
+
+	public class ClientTemplate : ITemplateLoader {
+	   
+	    public void Load() {
+	        Fixture.Of<Client>().AddTemplate("valid") 
+				.ForMember(e => e.Name, "Jorg Ancrath")
+				.ForMember(e => e.Address, Rule.One<Address>("Valid Address"))					
+				.ForMember(e => e.CPF, Rule.Cpf());
+
+			Fixture.Of<Address>().AddTemplate ("Valid Address")
+				.ForMember(e => e.Street, "Castelo")
+				.ForMember(e => e.City, "Cidade Alta")
+				.ForMember(e => e.State, "Terras Altas de Rennar")
+				.ForMember(e => e.Country, "Ancrath");	
+	    }
+	}
+
 All templates can be loaded using FixtureFactoryLoader
 
 	FixtureFactoryLoader.LoadTemplates();
@@ -77,5 +108,5 @@ Example of loading templates with NUnit tests
 
 ## License
 
-Fixture-Factory is released under the Apache 2.0 license. See the LICENSE file included with the distribution for details.
+NFixture-Factory is released under the Apache 2.0 license. See the LICENSE file included with the distribution for details.
 

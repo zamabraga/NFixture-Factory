@@ -9,17 +9,13 @@ namespace NFixtureFactoryTest.Template
 	{
 		public static readonly String Valid_Template = "Valid Phone";
 
-		#region ITemplateLoader implementation
-
+		
 		public void Load ()	{
 
-			Fixture.Of<Phone>().AddTemplate (Valid_Template, 
-				new Rule ()
-				            .Add("Number", 55555555M)
-			);
+            Fixture.Of<Phone>().AddTemplate(Valid_Template)
+                                .ForMember(e => e.Number, 55555555M);
 		}
-
-		#endregion
+		
 	}
 }
 

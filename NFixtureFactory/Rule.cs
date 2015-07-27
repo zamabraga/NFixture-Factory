@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using NFixtureFactory.Functions;
+using System.Linq.Expressions;
 
 namespace NFixtureFactory
 {
@@ -24,7 +25,7 @@ namespace NFixtureFactory
 		{
 			_properties.Add(new Property(property, value));
 			return this;
-		}
+		}        
 
 		public Rule Add(String property, IFunction function){
 		
@@ -32,7 +33,9 @@ namespace NFixtureFactory
 			return this;
 		}
 
-		public static Object Cpf()
+        #region Static Members
+
+        public static Object Cpf()
 		{
 			return new Cpf().GenerateValue<Decimal>();	
 		}
@@ -51,10 +54,10 @@ namespace NFixtureFactory
 		public static IAssociationFunction<IEnumerable<T>> Has<T>(Int32 quantity)
 		{
 			return new AssociationFunction<IEnumerable<T>>(quantity);
-		}
+        }
 
+        #endregion
 
-
-	}
+    }
 }
 

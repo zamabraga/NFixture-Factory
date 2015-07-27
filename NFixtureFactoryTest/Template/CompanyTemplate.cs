@@ -24,12 +24,11 @@ namespace NFixtureFactoryTest.Template
 
 		public void Load ()
 		{
-			Fixture.Of<Company>().AddTemplate(VALID_COMPANY_TEMPLATE_NAME, 
-				new Rule()
-					.Add("Name", PROPERTY_VALUE)
-					.Add("Address", Rule.One<Address>(AddressTemplate.VALID_ADDRESS_TEMPLATE))
-					.Add("CNPJ", Rule.Cnpj())
-			);
+			Fixture.Of<Company>().AddTemplate(VALID_COMPANY_TEMPLATE_NAME)
+                                 .ForMember(e => e.Name, PROPERTY_VALUE)
+                                 .ForMember(e => e.Address, Rule.One<Address>(AddressTemplate.VALID_ADDRESS_TEMPLATE))
+                                 .ForMember(e => e.CNPJ, Rule.Cnpj());				
+			
 		}
 
 		#endregion
