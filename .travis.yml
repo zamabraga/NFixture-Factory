@@ -3,8 +3,9 @@ solution: NFixture-Factory.sln
 mono:
   - latest
 after_success:
-  - ./testrunner/OpenCover.4.6.166/tools/OpenCover.Console.exe -target:"./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe" -targetargs:"/noresults /noisolation /testcontainer:""./NFixtureFactoryTest/bin/Release/NFixtureFactory.Tests.dll" -filter:"+[NFixtureFactory.Tests]*  -[NFixtureFactory.Tests]NFixtureFactory.Tests.Properties.*" -excludebyattribute:*.ExcludeFromCodeCoverage* -hideskipped:All -output:.\MyProject_coverage.xml
-  - bash <(curl https://codecov.io/bash) 
+ - nuget spec ./NFixtureFactoryTest/bin/Release/NFixtureFactory.dll
+ - nuget setApiKey 4def1252-4498-462e-b5fc-5e68988c8812
+ - nuget push NFixtureFactory.nupkg
 install:
   - sudo apt-get install -y gtk-sharp2
   - nuget restore NFixture-Factory.sln  
