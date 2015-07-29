@@ -31,7 +31,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = NFixtureFactory\NFixtureFactory.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
@@ -47,6 +46,7 @@ Global
 		$5.NamingStyle = None
 		$5.IncludeInstanceMembers = True
 		$5.IncludeStaticEntities = True
+		description = Fixture Factory .NET is a tool to help developers quickly build and organize fake objects for unit tests. The key idea is to create specification limits of the data (templates) instead of hardcoded data.
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
