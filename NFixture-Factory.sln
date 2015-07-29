@@ -46,6 +46,8 @@ Global
 		$5.NamingStyle = None
 		$5.IncludeInstanceMembers = True
 		$5.IncludeStaticEntities = True
+		$0.VersionControlPolicy = $6
+		$6.inheritsSet = Mono
 		description = Fixture Factory .NET is a tool to help developers quickly build and organize fake objects for unit tests. The key idea is to create specification limits of the data (templates) instead of hardcoded data.
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
