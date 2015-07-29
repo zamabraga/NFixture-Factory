@@ -4,8 +4,9 @@ mono:
   - latest
 after_success:
  - nuget spec ./NFixtureFactoryTest/bin/Release/NFixtureFactory.dll
+ - nuget pack ./NFixtureFactoryTest/bin/Release/NFixtureFactory.dll.nuspec
  - nuget setApiKey '4def1252-4498-462e-b5fc-5e68988c8812'
- - nuget push ./NFixtureFactoryTest/bin/Release/NFixtureFactory.dll.nuspec
+ - nuget push ./NFixtureFactoryTest/bin/Release/NFixtureFactory.dll.nupkg
 install:
   - sudo apt-get install -y gtk-sharp2
   - nuget restore NFixture-Factory.sln  
