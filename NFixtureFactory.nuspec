@@ -13,11 +13,9 @@
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>UnitTest FakeObjects</tags>
-    <dependencies>
-    <dependency  />
-    </dependencies>
+    <dependencies />
   </metadata>
   <files>
     <file src="LICENSE.md" />
-    </files>
+  </files>
 </package>
