@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NFixtureFactory</id>
-    <version>1.0.0.3</version>
+    <version>1.0.0.4</version>
     <authors>Zama Bandeira Braga</authors>
     <owners>Zama Bandeira Braga</owners>
     <licenseUrl>https://github.com/zamabraga/NFixture-Factory/blob/master/LICENSE.md</licenseUrl>
@@ -13,5 +13,8 @@
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>UnitTest FakeObjects</tags>
+    <dependencies>
+    <dependency id="" version="" />
+    </dependencies>
   </metadata>
 </package>
