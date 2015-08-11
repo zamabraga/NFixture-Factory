@@ -17,7 +17,6 @@
   <files>
     <file src="LICENSE.md" />
     <file src="NFixtureFactory/bin/Release/NFixtureFactory.dll" />
-    <file src="NFixtureFactory/bin/Release/NFixtureFactory.pdb" />
     <file src="NFixtureFactory/bin/Release/NFixtureFactory.xml" />
   </files>
 </package>
