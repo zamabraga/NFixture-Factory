@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>NFixtureFactory</id>
-    <version>1.0.0.2</version>
+    <version>1.0.0.3</version>
     <authors>Zama Bandeira Braga</authors>
     <owners>Zama Bandeira Braga</owners>
     <licenseUrl>https://github.com/zamabraga/NFixture-Factory/blob/master/LICENSE.md</licenseUrl>
@@ -16,5 +16,6 @@
   </metadata>
   <files>
     <file src="LICENSE.md" />
+    <file src="./NFixtureFactory/bin/Release/NFixtureFactory.dll" />
   </files>
 </package>
