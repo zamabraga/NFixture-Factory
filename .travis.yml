@@ -8,7 +8,7 @@ after_success:
  - nuget push *.nupkg
 install:
   - sudo apt-get install -y gtk-sharp2
-  - nuget restore NFixture-Factory.sln  
+  - nuget restore ./src/NFixture-Factory.sln  
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release /src/NFixture-Factory.sln
