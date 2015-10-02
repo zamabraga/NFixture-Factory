@@ -2,8 +2,14 @@
 [![Build Status](https://travis-ci.org/six2six/fixture-factory.png?branch=master)](https://travis-ci.org/zamabraga/NFixture-Factory)
 # NFixture-Factory
 
-Fixture Factory .NET is a tool to help developers quickly build and organize fake objects for unit tests. The key idea is to create specification limits of the data (templates) instead of hardcoded data. Try using N-F-F, then you can focus on the behavior of your methods and we manage the data.
+NFixture Factory  is a tool to help developers quickly build and organize fake objects for unit tests. The key idea is to create specification limits of the data (templates) instead of hardcoded data. Try using N-F-F, then you can focus on the behavior of your methods and we manage the data.
 Initially ported from [fixture-factory](https://github.com/six2six/fixture-factory)  
+
+## NuGet Packages
+
+To install NFixture Factory with NuGet, run the following command in the Package Manager Console: 
+
+	Install-Package NFixtureFactory
 
 ## Usage
 
