@@ -14,5 +14,12 @@ namespace NFixtureFactory.Loader
 			}
 		}
 	}
+
+
+    [Obsolete("use NFixtureFactoryLoader", false)]
+    public class FixtureFactoryLoader : NFixtureFactoryLoader
+    { 
+    
+    }
 }
 

@@ -27,7 +27,14 @@ namespace NFixtureFactory
 			return new ObjectFactory<T>(Of<T>());
 		} 
 
-
 	}
+
+    [Obsolete("use NFixture", false)]
+    public class Fixture : NFixture
+    {
+        
+
+
+    }
 }
 
