@@ -3,7 +3,8 @@ solution: NFixture-Factory.sln
 mono:
   - latest
 env:
-  - SECRET_TOKEN=token
+  global:
+    - SECRET_TOKEN=token
 after_success: 
  - nuget pack ./src/NFixtureFactory/NFixtureFactory.nuspec
  - nuget setApiKey SECRET_TOKEN
