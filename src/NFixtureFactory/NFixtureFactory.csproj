@@ -51,7 +51,9 @@
     <Compile Include="Functions\Cnpj.cs" />
     <Compile Include="Util\ReflectionUtils.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="NFixtureFactory.nuspec" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
