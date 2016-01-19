@@ -33,12 +33,12 @@ Writing template rules
 
 or
 
-	Fixture.Of<Client>().AddTemplate("valid") 
+	NFixture.Of<Client>().AddTemplate("valid") 
 				.ForMember(e => e.Name, "Jorg Ancrath")
 				.ForMember(e => e.Address, Rule.One<Address>("Valid Address"))					
 				.ForMember(e => e.CPF, Rule.Cpf());
 
-	Fixture.Of<Address>().AddTemplate ("Valid Address")
+	NFixture.Of<Address>().AddTemplate ("Valid Address")
 				.ForMember(e => e.Street, "Castelo")
 				.ForMember(e => e.City, "Cidade Alta")
 				.ForMember(e => e.State, "Terras Altas de Rennar")
@@ -48,11 +48,11 @@ Using on your tests code:
 
 Gimme one object from label "valid"
 
-	Client client = Fixture.From<Client>().Gimme("valid");
+	Client client = NFixture.From<Client>().Gimme("valid");
 
 Gimme N objects from label "valid"
 
-	List<Client> clients = Fixture.From<Client>().Gimme(5, "valid");
+	List<Client> clients = NFixture.From<Client>().Gimme(5, "valid");
 
 
 ### Managing Templates
@@ -108,7 +108,7 @@ Example of loading templates with NUnit tests
 	[TestFixtureSetUp()]
 	public void SetUp()
 	{
-		FixtureFactoryLoader.LoadTemplates();
+		NFixtureFactoryLoader.LoadTemplates();
 	}
 
 ## License
