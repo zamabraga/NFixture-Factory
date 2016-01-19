@@ -15,14 +15,14 @@ To install NFixture Factory with NuGet, run the following command in the Package
 
 Writing template rules
 
-	Fixture.Of<Client>().AddTemplate("valid", 
+	NFixture.Of<Client>().AddTemplate("valid", 
 				new Rule()
 					.Add("Name", "Jorg Ancrath")
 					.Add("Address", Rule.One<Address>("Valid Address"))					
 				    .Add("CPF", Rule.Cpf())
 	);
 
-	Fixture.Of<Address>().AddTemplate ("Valid Address", 
+	NFixture.Of<Address>().AddTemplate ("Valid Address", 
 				new Rule ()
 				.Add("Street", "Castelo")
 				.Add("City", "Cidade Alta")
@@ -62,14 +62,14 @@ Templates can be written within TemplateLoader interface
 	public class ClientTemplate : ITemplateLoader {
 	   
 	    public void Load() {
-	        Fixture.Of<Client>().AddTemplate("valid", 
+	        NFixture.Of<Client>().AddTemplate("valid", 
 				new Rule()
 					.Add("Name", "Jorg Ancrath")
 					.Add("Address", Rule.One<Address>("Valid Address"))					
 				    .Add("CPF", Rule.Cpf())
 			);
 
-			Fixture.Of<Address>().AddTemplate ("Valid Address", 
+			NFixture.Of<Address>().AddTemplate ("Valid Address", 
 				new Rule ()
 				.Add("Street", "Castelo")
 				.Add("City", "Cidade Alta")
@@ -85,12 +85,12 @@ or
 	public class ClientTemplate : ITemplateLoader {
 	   
 	    public void Load() {
-	        Fixture.Of<Client>().AddTemplate("valid") 
+	        NFixture.Of<Client>().AddTemplate("valid") 
 				.ForMember(e => e.Name, "Jorg Ancrath")
 				.ForMember(e => e.Address, Rule.One<Address>("Valid Address"))					
 				.ForMember(e => e.CPF, Rule.Cpf());
 
-			Fixture.Of<Address>().AddTemplate ("Valid Address")
+			NFixture.Of<Address>().AddTemplate ("Valid Address")
 				.ForMember(e => e.Street, "Castelo")
 				.ForMember(e => e.City, "Cidade Alta")
 				.ForMember(e => e.State, "Terras Altas de Rennar")
@@ -100,7 +100,7 @@ or
 
 All templates can be loaded using FixtureFactoryLoader
 
-	FixtureFactoryLoader.LoadTemplates();
+	NFixtureFactoryLoader.LoadTemplates();
 
 
 Example of loading templates with NUnit tests

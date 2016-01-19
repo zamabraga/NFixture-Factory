@@ -19,7 +19,7 @@ namespace NFixtureFactoryTest.Template
         public void Load()
         {
 
-            Fixture.Of<Address>().AddTemplate(VALID_ADDRESS_TEMPLATE)
+            NFixture.Of<Address>().AddTemplate(VALID_ADDRESS_TEMPLATE)
                                     .ForMember(e => e.Street, STREET)
                                     .ForMember(e => e.City, CITY)
                                     .ForMember(e => e.State, STATE)

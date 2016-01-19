@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace NFixtureFactory
 {
-	public class Fixture
+	public class NFixture
 	{
 		private static IDictionary<Type, Object> templates = new Dictionary<Type, Object>();
 

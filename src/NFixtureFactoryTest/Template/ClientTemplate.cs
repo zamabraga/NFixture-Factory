@@ -17,7 +17,7 @@ namespace NFixtureFactoryTest.Template
 
 		public void Load ()
 		{          
-            Fixture.Of<Client>().AddTemplate(VALID_TEMPLATE_NAME)
+            NFixture.Of<Client>().AddTemplate(VALID_TEMPLATE_NAME)
                                 .ForMember(e => e.Name, PROPERTY_VALUE)
                                 .ForMember(e => e.Address, Rule.One<Address>(AddressTemplate.VALID_ADDRESS_TEMPLATE))
                                 .ForMember(e => e.Phones, Rule.Has<Phone>(QUANTITY_OF_PHONES).Of(PhoneTemplate.Valid_Template))

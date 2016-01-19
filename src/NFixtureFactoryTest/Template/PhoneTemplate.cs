@@ -12,7 +12,7 @@ namespace NFixtureFactoryTest.Template
 		
 		public void Load ()	{
 
-            Fixture.Of<Phone>().AddTemplate(Valid_Template)
+            NFixture.Of<Phone>().AddTemplate(Valid_Template)
                                 .ForMember(e => e.Number, 55555555M);
 		}
 		

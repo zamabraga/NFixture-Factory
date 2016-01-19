@@ -37,10 +37,10 @@
     <Compile Include="Functions\IdentityFunction.cs" />
     <Compile Include="Functions\IAtomicFunction.cs" />
     <Compile Include="TemplateHolder.cs" />
-    <Compile Include="Fixture.cs" />
+    <Compile Include="NFixture.cs" />
     <Compile Include="ObjectFactory.cs" />
     <Compile Include="Loader\ITemplateLoader.cs" />
-    <Compile Include="Loader\FixtureFactoryLoader.cs" />
+    <Compile Include="Loader\NFixtureFactoryLoader.cs" />
     <Compile Include="Util\ClassLoaderUtils.cs" />
     <Compile Include="Functions\IAssociationFunction.cs" />
     <Compile Include="Functions\AssociationFunction.cs" />

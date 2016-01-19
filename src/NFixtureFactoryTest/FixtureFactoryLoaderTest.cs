@@ -17,13 +17,13 @@ namespace NFixtureFactoryTest
 		[TestFixtureSetUp()]
 		public void SetUp()
 		{
-			FixtureFactoryLoader.LoadTemplates();
+			NFixtureFactoryLoader.LoadTemplates();
 		}
 
 		[Test()]
 		public void ShouldLoadClientTemplate()
 		{
-			Client client = Fixture.From<Client>().Gimme(ClientTemplate.VALID_TEMPLATE_NAME);
+			Client client = NFixture.From<Client>().Gimme(ClientTemplate.VALID_TEMPLATE_NAME);
 			Assert.IsNotNull (client);
 			Assert.AreEqual (ClientTemplate.PROPERTY_VALUE, client.Name);
 			Assert.AreNotEqual (0, client.CPF);
@@ -40,7 +40,7 @@ namespace NFixtureFactoryTest
 		[Test()]
 		public void ShouldLoadFiveClientTemplate()
 		{
-			IEnumerable<Client> clients = Fixture.From<Client>().Gimme(5, ClientTemplate.VALID_TEMPLATE_NAME);
+			IEnumerable<Client> clients = NFixture.From<Client>().Gimme(5, ClientTemplate.VALID_TEMPLATE_NAME);
 			Assert.IsNotNull (clients);
 			Assert.AreEqual(5, clients.Count());
 
@@ -49,7 +49,7 @@ namespace NFixtureFactoryTest
 		[Test()]
 		public void ShouldLoadCompanyTemplate()
 		{
-			Company company = Fixture.From<Company>().Gimme(CompanyTemplate.VALID_COMPANY_TEMPLATE_NAME);
+			Company company = NFixture.From<Company>().Gimme(CompanyTemplate.VALID_COMPANY_TEMPLATE_NAME);
 			Assert.IsNotNull (company);
 			Assert.AreEqual (CompanyTemplate.PROPERTY_VALUE, company.Name);
 			Assert.AreNotEqual (0, company.CNPJ);
@@ -64,7 +64,7 @@ namespace NFixtureFactoryTest
 		[Test()]
 		public void ShouldNotAddTempaleWithExistName()
 		{			
-			Assert.Throws<ApplicationException>(() => FixtureFactoryLoader.LoadTemplates(), Resources.EXCEPTION_MESSAGE_EXIST_RULE_LABEL);
+			Assert.Throws<ApplicationException>(() => NFixtureFactoryLoader.LoadTemplates(), Resources.EXCEPTION_MESSAGE_EXIST_RULE_LABEL);
 		}
 
 	}

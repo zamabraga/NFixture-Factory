@@ -39,9 +39,9 @@ namespace NFixtureFactory.Functions
 			var outValue = Activator.CreateInstance(outValueType);
 
 
-			MethodInfo fromMI = typeof(Fixture).GetMethod("From");
+			MethodInfo fromMI = typeof(NFixture).GetMethod("From");
 			MethodInfo fromM = fromMI.MakeGenericMethod(genericMethodType);
-			var objectFactory = fromM.Invoke (typeof(Fixture), BindingFlags.Static, null, null, null);	
+			var objectFactory = fromM.Invoke (typeof(NFixture), BindingFlags.Static, null, null, null);	
 
 			for (int i = 0; i < _quantity; i++) {
 
@@ -66,7 +66,7 @@ namespace NFixtureFactory.Functions
 				return GenerateList<T>();
 
 			} else {
-				return Generate<T>(Fixture.From<T>());
+				return Generate<T>(NFixture.From<T>());
 			}
 		}
 
