@@ -4,7 +4,7 @@ mono:
   - latest
 env:
   global:
-    - SECRET_TOKEN:$token
+    - SECRET_TOKEN=token
 after_success: 
  - nuget pack ./src/NFixtureFactory/NFixtureFactory.nuspec
  - nuget setApiKey SECRET_TOKEN
