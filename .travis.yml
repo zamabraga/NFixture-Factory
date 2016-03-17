@@ -7,7 +7,7 @@ env:
     - SECRET_TOKEN=token
 after_success: 
  - nuget pack ./src/NFixtureFactory/NFixtureFactory.nuspec
- - nuget setApiKey 0ee4ac22-3e57-4130-bb49-67debabd0292
+ - nuget setApiKey SECRET_TOKEN
  - nuget push *.nupkg
 install:
   - sudo apt-get install -y gtk-sharp2
